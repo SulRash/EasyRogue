@@ -1,0 +1,61 @@
+{
+
+    "Actors": {
+
+        "Player": {
+            "name": "player",
+            "character": "@",
+            "blocks movement": "True",
+            "health": 20,
+            "attack": 5,
+            "defense": 2
+        },
+
+        "Zombie": {
+            "name": "zombie",
+            "character": "z",
+            "blocks movement": "True",
+            "health": 8,
+            "attack": 3,
+            "defense": 2
+        },
+
+        "Vampire": {
+            "name": "vampire",
+            "character": "v",
+            "blocks movement": "True",
+            "health": 12,
+            "attack": 4,
+            "defense": 1
+        }
+
+    },
+
+    "Items": {
+        
+        "exit": {
+            "name": "exit",
+            "character": ">",
+            "blocks movement": "False"
+        },
+
+        "health potion": {
+            "name": "health potion",
+            "character": "+",
+            "blocks movement": "False",
+            "health": 10
+        }
+    },
+
+    "Misc": {
+
+        "Corpse": {
+            "name": "corpse",
+            "character": "q",
+            "blocks movement": "False"
+        }
+
+    }
+
+    
+}
