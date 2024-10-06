@@ -1,0 +1,28 @@
+rewards:
+  exit:
+    score: 150
+    condition: "dest.char == '>'"
+  explore:
+    score: 0.5
+    condition: "self.explored_reward > 0"
+  death:
+    score: -50
+    condition: "self.engine.player.is_dead()"
+  time_over:
+    score: -75
+    condition: "self.time_spent >= 250"
+  attack_zombie:
+    score: 2
+    condition: "action_type == Attack and dest.char == 'z'"
+  attack_vampire:
+    score: 3
+    condition: "action_type == Attack and dest.char == 'v'"
+  kill_enemy:
+    score: 20
+    condition: "action_type == Attack and dest.is_dead()"
+  use_potion:
+    score: 3
+    condition: "dest.char == '+'"
+  bump_wall:
+    score: -1
+    condition: "dest.char == '#'"

@@ -1,5 +1,3 @@
-import os
-
 from src.game import Game
 
 def main():
